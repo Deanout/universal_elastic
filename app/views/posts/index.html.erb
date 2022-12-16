@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+<h1>Posts</h1>
+<%= render "search/form" %>
+<div id="posts">
+  <%= render "posts/posts", posts: @posts %>
+</div>
+<%= link_to "New post", new_post_path %>
